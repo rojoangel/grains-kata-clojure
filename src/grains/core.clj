@@ -1,7 +1,7 @@
 (ns grains.core)
 
+(defn- exp [x n]
+  (reduce * (repeat n x)))
+
 (defn square->grains [square]
-  (if (= square 1)
-    1
-    (if (= square 2)
-      2)))
+  (exp 2 (- square 1)))
