@@ -4,4 +4,5 @@
 
 (deftest grains-test
   (testing "grains per square"
-    (is (= 1 (square->grains 1)))))
+    (is (= 1 (square->grains 1)))
+    (is (= 2 (square->grains 2)))))

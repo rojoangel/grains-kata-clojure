@@ -1,4 +1,7 @@
 (ns grains.core)
 
 (defn square->grains [square]
-  1)
+  (if (= square 1)
+    1
+    (if (= square 2)
+      2)))
