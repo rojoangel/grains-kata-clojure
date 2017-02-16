@@ -2,6 +2,6 @@
   (:require [clojure.test :refer :all]
             [grains.core :refer :all]))
 
-(deftest a-test1
-  (testing "Basic tests"
-    ))
+(deftest grains-test
+  (testing "grains per square"
+    (is (= 1 (square->grains 1)))))
